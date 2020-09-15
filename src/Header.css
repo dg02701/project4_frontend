@@ -1,0 +1,25 @@
+.header {
+    border: 5px solid gold;
+    align-items: flex-end;
+    /* background: url("./filmImage.png"); */
+    background-size: 100%;
+    justify-content: center;
+  }
+  .title {
+    font-size: 55px;
+    display: flex;
+    justify-self: center;
+    background-color: lightgrey;
+    border-radius: 15px;
+    opacity: 0.8;
+  }
+  
+  .flex-title {
+    display: flex;
+    justify-content: center;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  

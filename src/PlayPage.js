@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./HomePage.css";
+import "./PlayPage.css";
 import Header from "./Header";
 import Footer from "./Footer";
 
 
-class HomePage extends Component {
+class PlayPage extends Component {
   constructor(props) {
     super(props);
     this.getSearchResults = this.getSearchResults.bind(this);
@@ -50,4 +50,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+export default PlayPage;

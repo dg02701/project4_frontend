@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Route, Link, Switch } from "react-router-dom";
+import { Route, Link, Switch, withRouter } from "react-router-dom";
 import axios from "axios";
 import HomePage from "./HomePage";
 const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000/api";
@@ -32,7 +32,6 @@ class App extends Component  {
           {/* <Link to="/"></Link> */}
           {/* <Link to=""></Link> */}
         </nav>
-        This is FE app.js
         <main>
           <Switch>
           <Route

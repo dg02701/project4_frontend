@@ -1,0 +1,50 @@
+.footer {
+    color: gold;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+  }
+  
+  h1 {
+    color: gold;
+    text-shadow: 4px 4px 6px #000000;
+    font-size: 40px;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    background-color: lightgrey;
+    border-radius: 15px;
+    opacity: 0.8;
+  }
+  .main {
+    background-color: lightgray;
+    background: url("./homePage.png"); 
+  }
+  html {
+    /* background-color: lightgray;
+    background: url("./homePage.png"); */
+  }
+  .align-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  a:link,
+  a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    align-self: center;
+  }
+  a:hover,
+  a:active {
+    background-color: gold;
+    box-shadow: 0 5px #666;
+  }

@@ -28,6 +28,8 @@ class HomePage extends Component {
             <h1>Welcome to an educational and fun app!</h1>
             <nav className="align-links">
             <Link to="/playpage">Play</Link>
+            <Link to="/customizepage">Customize Display</Link>
+            <Link to="/adminpage">Administraor Page</Link>
 
             {/* <form
                 onSubmit={(event) => {

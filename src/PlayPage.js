@@ -4,7 +4,6 @@ import "./PlayPage.css";
 import Header from "./Header";
 import Footer from "./Footer";
 
-
 class PlayPage extends Component {
   constructor(props) {
     super(props);
@@ -12,20 +11,20 @@ class PlayPage extends Component {
   }
 
   getSearchResults(searchInput) {
-    console.log("homepage", searchInput);
+    console.log("playpage", searchInput);
     this.props.getSearchResults(searchInput);
   }
 
   render() {
-    console.log(this.props);
+    console.log(`inside of PlayPage render ${this.props}`);
     return (
       <div >
         <div>
           <Header />
         </div>
         <br></br>
-        <body className="main">
-            <h1>Welcome to an educational and fun app!</h1>
+        <div className="main">
+            <h1>Ready to play?</h1>
             <nav className="align-links">
             {/* <Link to="/trendingmovies">Trending Movies</Link> */}
 
@@ -41,7 +40,7 @@ class PlayPage extends Component {
             </form> */}
             </nav>
             <div className="extraDiv"></div>
-        </body>
+        </div>
         <div className="footer">
           <Footer />
         </div>

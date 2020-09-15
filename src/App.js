@@ -4,6 +4,7 @@ import './App.css';
 import { Route, Link, Switch, withRouter } from "react-router-dom";
 import axios from "axios";
 import HomePage from "./HomePage";
+import PlayPage from "./PlayPage";
 const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000/api";
 
 // console.log(backendUrl);

@@ -24,10 +24,10 @@ class HomePage extends Component {
           <Header />
         </div>
         <br></br>
-        <body className="main">
+        <div className="main">
             <h1>Welcome to an educational and fun app!</h1>
             <nav className="align-links">
-            {/* <Link to="/trendingmovies">Trending Movies</Link> */}
+            <Link to="/playpage">Play</Link>
 
             {/* <form
                 onSubmit={(event) => {
@@ -41,7 +41,7 @@ class HomePage extends Component {
             </form> */}
             </nav>
             <div className="extraDiv"></div>
-        </body>
+        </div>
         <div className="footer">
           <Footer />
         </div>

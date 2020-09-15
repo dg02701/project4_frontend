@@ -9,14 +9,14 @@ function App() {
     <div className="App">
       <nav>
       // the link component produces an a element
-        <Link to=""></Link>
-        <Link to=""></Link>
+        {/* <Link to="/"></Link> */}
+        {/* <Link to=""></Link> */}
       </nav>
       <main>
         // routes render the specified component we pass in
-        <Route path="" render={}/>
+        <Route path="" render={"from App.js"}/>
         // we can give either a render or a component prop.
-        <Route path="" component={}/>
+        {/* <Route path="" component={}/> */}
       </main>
     </div>
   );

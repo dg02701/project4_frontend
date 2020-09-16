@@ -1,8 +1,13 @@
 .footer {
-    border: 5px solid gold;
+    color: green;
+    border: 5px solid lightgray;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
     width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color:lightgray;
   }

@@ -30,7 +30,7 @@ class App extends Component  {
       <div className="App">
         <nav>
         {/* // the link component produces an a element */}
-          {/* <Link to="/"></Link> */}
+        {/* <Link to="/playpage">Play</Link> */}
           {/* <Link to=""></Link> */}
         </nav>
         <main>
@@ -43,6 +43,13 @@ class App extends Component  {
                   // getSearchResults={this.getSearchResults}
                   // searchResultsArray={this.state.searchResultsArray}
                 />
+              )}
+            />
+            <Route
+              exact
+              path="/playpage"
+              component={(routerProps) => (
+                <PlayPage/>
               )}
             />
           </Switch>

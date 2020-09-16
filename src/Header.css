@@ -1,17 +1,17 @@
 .header {
-    border: 5px solid gold;
+    border: 5px solid black;
     align-items: flex-end;
     /* background: url("./filmImage.png"); */
     background-size: 100%;
     justify-content: center;
   }
   .title {
-    font-size: 55px;
+    font-size: 22px;
     display: flex;
     justify-self: center;
     background-color: lightgrey;
     border-radius: 15px;
-    opacity: 0.8;
+    opacity: 0.9;
   }
   
   .flex-title {

@@ -25,8 +25,17 @@ class PlayPage extends Component {
         <br></br>
         <div className="main">
             <h1>Ready to play?</h1>
+            <h3>Here is how you play.</h3>
+            <p>Use KEYBOARD only.   Here are the keys to use:</p>
+            <ol>
+                <li>ArrowRight (very bottom right of keyboard) gets next card.</li>
+                <li>'A' shows card back and answer</li>
+                <li>'Y' records your self-score that 'Yes', you had the correct answer </li>
+                <li>'N' records your self-score that 'No', you did not have the correct answer</li>
+                <li>After you select Y or N, use ArrowRight to get the next card </li>
+            </ol>
             <nav className="align-links">
-            {/* <Link to="/trendingmovies">Trending Movies</Link> */}
+            <Link to="/trendingmovies"></Link>
 
             {/* <form
                 onSubmit={(event) => {

@@ -44,7 +44,7 @@ class HomePage extends Component {
             </nav>
             <div className="extraDiv"></div>
         </div>
-        <div className="footer">
+        <div>
           <Footer />
         </div>
       </div>

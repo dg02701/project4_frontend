@@ -6,10 +6,30 @@ import Footer from "./Footer";
 import axios from "axios";
 const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000/api";
 
-class PlayPage extends Component {
+class PlayPageTwo extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      decks: [],
+    }
+    this.getSearchResults = this.getSearchResults.bind(this);
+  }
+
+  getSearchResults(searchInput) {
+    console.log("playpage", searchInput);
+    this.props.getSearchResults(searchInput);
+  }
+
+  componentDidMount() {
+    axios.get(`${backendUrl}/decks`).then((response) => {
+      this.setState({
+        decks: response.data.decks,
+      });
+    });
+  }
+
   render() {
-    let deckList = [...this.props.decks];
-    console.log(`inside of PlayPage render ${deckList}`);
+    console.log(`inside of PlayPage render ${this.state}`);
     return (
       <div >
         <div>
@@ -53,4 +73,4 @@ class PlayPage extends Component {
   }
 }
 
-export default PlayPage;
+export default PlayPageTwo;

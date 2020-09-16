@@ -14,17 +14,17 @@ const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000/a
 class App extends Component  {
   constructor(props) {
     super();
-    // this.state = {
-    //   decks: [],
-    // }
+    this.state = {
+      decks: [],
+    }
   }
-  // componentDidMount() {
-  //   axios.get(`${backendUrl}/decks`).then((response) => {
-  //     this.setState({
-  //       decks: response.data.decks,
-  //     });
-  //   });
-  // }
+  componentDidMount() {
+    axios.get(`${backendUrl}/decks`).then((response) => {
+      this.setState({
+        decks: response.data.decks,
+      });
+    });
+  }
 
   render() {
     console.log(this.state);
@@ -51,7 +51,7 @@ class App extends Component  {
               exact
               path="/playpage"
               component={(routerProps) => (
-                <PlayPage/>
+                <PlayPage {...this.state} {...routerProps} />
               )}
             />
             <Route

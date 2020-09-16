@@ -15,5 +15,11 @@
     color: black;
     font-size: 19px;
     text-align: justify;
+}
+
+.deckButtonDiv {
+    background-color: lightseagreen;
+    display: flex;
+    
 
 }

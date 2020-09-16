@@ -12,7 +12,7 @@ class CustomizePage extends Component {
           <Header />
         </div>
         <div>
-          <h1>Adminstrator Page</h1>
+          <h1>Administrator Page</h1>
         </div>
         <div>
           <Footer />

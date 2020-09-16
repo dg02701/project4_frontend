@@ -27,7 +27,7 @@ class HomePage extends Component {
             <nav className="align-links">
             <Link to="/playpage">Play</Link>
             <Link to="/customizepage">Customize Display</Link>
-            <Link to="/adminpage">Administraor Page</Link>
+            <Link to="/adminpage">Administrator Page</Link>
 
             {/* <form
                 onSubmit={(event) => {

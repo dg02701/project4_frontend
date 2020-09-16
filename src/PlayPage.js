@@ -8,21 +8,26 @@ const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000/a
 
 class PlayPage extends Component {
   constructor(props) {
-    super();
+    super(props);
     this.state = {
       decksList: [],
-      cardsToPlay: [],
+      cardsToPlay: [...this.props.decks],
       cardsToReview: [],
     }
   }
-  getCardsToPlay() {
-    this.setState({
-      cardsToPlay: [...this.props.decks]
-    });
-  };
+  // getCardsToPlay() {
+  //   this.setState({
+  //     cardsToPlay: [...this.props.decks]
+  //   });
+  // };
 
 
   render() {
+    let deckButtons = this.state.cardsToPlay.map(deck => {
+      return <button key={deck.id}>{deck.title}</button>
+    })
+    
+    console.log(this.state.cardsToPlay);
     let deckList = [...this.props.decks];
     console.log("this is in PlayPage.js  ", deckList);
     return (
@@ -37,7 +42,7 @@ class PlayPage extends Component {
             <div className="instructions1">
               <h3>Use KEYBOARD only.   Here are the keys to use:</h3>
               <ol className="instructions2">
-                  <li>ArrowRight (very bottom right of keyboard) gets next card.</li>
+                  <li>ArrowRight (very bottom right of keyboard) gets next card</li>
                   <li>'A' shows card back and answer</li>
                   <li>'Y' records your self-score that 'Yes', you had the correct answer </li>
                   <li>'N' records your self-score that 'No', you did not have the correct answer</li>
@@ -58,8 +63,9 @@ class PlayPage extends Component {
                 <button>Search Movies</button>
             </form> */}
             </nav>
-            <div className="extraDiv"></div>
+
         </div>
+        <div className="deckButtonDiv">{deckButtons}</div>
         <div className="footer">
           <Footer />
         </div>

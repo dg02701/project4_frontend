@@ -1,9 +1,19 @@
 .main {
     background-color: lightgray;
-    background: url("./homePage.png"); 
+    /* background: url("./homePage.png");  */
 }
 
 .instructions1 {
     color: green;
+    font-size: 25px;
     border: solid 5px black;
+    margin-inline-start: 30%;
+    margin-inline-end: 30%; 
+}
+
+.instructions2 {
+    color: black;
+    font-size: 19px;
+    text-align: justify;
+
 }

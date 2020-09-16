@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Route, Link, Switch, withRouter } from "react-router-dom";
+// import { Route, Link, withRouter } from "react-router-dom";
+// import Switch from "./Switch";
 import axios from "axios";
 import HomePage from "./HomePage";
 import PlayPage from "./PlayPage";
@@ -30,6 +32,9 @@ class App extends Component  {
     console.log(this.state);
     return (
       <div className="App">
+        {/* <div>
+          <Switch />
+        </div> */}
         <nav>
         {/* // the link component produces an a element */}
         {/* <Link to="/playpage">Play</Link> */}

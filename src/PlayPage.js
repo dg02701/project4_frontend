@@ -7,9 +7,24 @@ import axios from "axios";
 const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000/api";
 
 class PlayPage extends Component {
+  constructor(props) {
+    super();
+    this.state = {
+      decksList: [],
+      cardsToPlay: [],
+      cardsToReview: [],
+    }
+  }
+  getCardsToPlay() {
+    this.setState({
+      cardsToPlay: [...this.props.decks]
+    });
+  };
+
+
   render() {
     let deckList = [...this.props.decks];
-    console.log(`inside of PlayPage render ${deckList}`);
+    console.log("this is in PlayPage.js  ", deckList);
     return (
       <div >
         <div>
@@ -21,7 +36,7 @@ class PlayPage extends Component {
             <h3>Here is how you play.</h3>
             <div className="instructions1">
               <h3>Use KEYBOARD only.   Here are the keys to use:</h3>
-              <ol>
+              <ol className="instructions2">
                   <li>ArrowRight (very bottom right of keyboard) gets next card.</li>
                   <li>'A' shows card back and answer</li>
                   <li>'Y' records your self-score that 'Yes', you had the correct answer </li>

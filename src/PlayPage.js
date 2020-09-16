@@ -3,10 +3,15 @@ import { Link } from "react-router-dom";
 import "./PlayPage.css";
 import Header from "./Header";
 import Footer from "./Footer";
+import axios from "axios";
+const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000/api";
 
 class PlayPage extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      decks: [],
+    }
     this.getSearchResults = this.getSearchResults.bind(this);
   }
 
@@ -15,8 +20,16 @@ class PlayPage extends Component {
     this.props.getSearchResults(searchInput);
   }
 
+  componentDidMount() {
+    axios.get(`${backendUrl}/decks`).then((response) => {
+      this.setState({
+        decks: response.data.decks,
+      });
+    });
+  }
+
   render() {
-    console.log(`inside of PlayPage render ${this.props}`);
+    console.log(`inside of PlayPage render ${this.state}`);
     return (
       <div >
         <div>
@@ -26,16 +39,18 @@ class PlayPage extends Component {
         <div className="main">
             <h1>Ready to play?</h1>
             <h3>Here is how you play.</h3>
-            <p>Use KEYBOARD only.   Here are the keys to use:</p>
-            <ol>
-                <li>ArrowRight (very bottom right of keyboard) gets next card.</li>
-                <li>'A' shows card back and answer</li>
-                <li>'Y' records your self-score that 'Yes', you had the correct answer </li>
-                <li>'N' records your self-score that 'No', you did not have the correct answer</li>
-                <li>After you select Y or N, use ArrowRight to get the next card </li>
-            </ol>
+            <div className="instructions1">
+              <h3>Use KEYBOARD only.   Here are the keys to use:</h3>
+              <ol>
+                  <li>ArrowRight (very bottom right of keyboard) gets next card.</li>
+                  <li>'A' shows card back and answer</li>
+                  <li>'Y' records your self-score that 'Yes', you had the correct answer </li>
+                  <li>'N' records your self-score that 'No', you did not have the correct answer</li>
+                  <li>After you select Y or N, use ArrowRight to get the next card </li>
+              </ol>
+            </div>
             <nav className="align-links">
-            <Link to="/trendingmovies"></Link>
+            {/* <Link to="/trendingmovies"></Link> */}
 
             {/* <form
                 onSubmit={(event) => {

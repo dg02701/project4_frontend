@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 import { Route, Link, Switch, withRouter } from "react-router-dom";
 import axios from "axios";
 import HomePage from "./HomePage";
 import PlayPage from "./PlayPage";
+import CustomizePage from "./CustomizePage";
+import AdminPage from "./AdminPage";
 const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000/api";
 
 // console.log(backendUrl);
@@ -12,17 +14,17 @@ const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000/a
 class App extends Component  {
   constructor(props) {
     super();
-    this.state = {
-      decks: [],
-    }
+    // this.state = {
+    //   decks: [],
+    // }
   }
-  componentDidMount() {
-    axios.get(`${backendUrl}/decks`).then((response) => {
-      this.setState({
-        decks: response.data.decks,
-      });
-    });
-  }
+  // componentDidMount() {
+  //   axios.get(`${backendUrl}/decks`).then((response) => {
+  //     this.setState({
+  //       decks: response.data.decks,
+  //     });
+  //   });
+  // }
 
   render() {
     console.log(this.state);
@@ -50,6 +52,20 @@ class App extends Component  {
               path="/playpage"
               component={(routerProps) => (
                 <PlayPage/>
+              )}
+            />
+            <Route
+              exact
+              path="/customizepage"
+              component={(routerProps) => (
+                <CustomizePage/>
+              )}
+            />
+            <Route
+              exact
+              path="/adminpage"
+              component={(routerProps) => (
+                <AdminPage/>
               )}
             />
           </Switch>

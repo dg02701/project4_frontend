@@ -33,7 +33,7 @@
     text-decoration: none;
     display: inline-block;
     border-radius: 15px;
-    box-shadow: 0 9px #999;
+    box-shadow: 1px 5px #999;
     align-self: center;
   }
   a:hover,

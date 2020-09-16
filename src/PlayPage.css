@@ -2,3 +2,8 @@
     background-color: lightgray;
     background: url("./homePage.png"); 
 }
+
+.instructions1 {
+    color: green;
+    border: solid 5px black;
+}

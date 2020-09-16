@@ -4,7 +4,6 @@ import "./HomePage.css";
 import Header from "./Header";
 import Footer from "./Footer";
 
-
 class HomePage extends Component {
   constructor(props) {
     super(props);

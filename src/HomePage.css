@@ -10,17 +10,20 @@
     border-radius: 15px;
     opacity: 0.9;
   }
-  .main {
-    background-color: lightgray;
-    /* background: url("./homePage.png");  */
+  .homePageAppTitle {
+    font-size: 4em;
   }
-  /* html {
+
+  html {
     background-color: lightgray;
-    background: url("./homePage.png");
-  } */
+    /* background: url("./homePage.png"); */
+  }
+
   .align-links {
     display: flex;
     flex-direction: column;
+    font-size: 2em;
+    
   }
   
   a:link,
@@ -35,9 +38,21 @@
     border-radius: 15px;
     box-shadow: 1px 5px #999;
     align-self: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
   a:hover,
   a:active {
-    background-color: gold;
-    box-shadow: 0 5px #666;
+    background-color: green;
+    box-shadow: 0 3px #666;
+  }
+  .span1 {
+    color: black;
+    font-size: 1em;
+  }
+  #adminHide {
+    background-color: lightgrey;
+    margin-top: 5em;
+    font-size: 0.2em;
+
   }

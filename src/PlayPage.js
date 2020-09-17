@@ -24,7 +24,7 @@ class PlayPage extends Component {
 
   render() {
     let deckButtons = this.state.cardsToPlay.map(deck => {
-      return <button key={deck.id}>{deck.title}</button>
+      return <button className="deckButton" key={deck.id}>{deck.title}</button>
     })
     
     console.log(this.state.cardsToPlay);
@@ -37,10 +37,11 @@ class PlayPage extends Component {
         </div>
         <br></br>
         <div className="main">
-            <h1>Ready to play?</h1>
-            <h3>Here is how you play.</h3>
+            <h1 className="playH1">Ready to play?</h1>
+            <h1 className="playH1">Here is how:</h1>
             <div className="instructions1">
-              <h3>Use KEYBOARD only.   Here are the keys to use:</h3>
+              <h3>Use KEYBOARD only</h3>
+              <h3>Here are the keys to use:</h3>
               <ol className="instructions2">
                   <li>ArrowRight (very bottom right of keyboard) gets next card</li>
                   <li>'A' shows card back and answer</li>
@@ -63,7 +64,8 @@ class PlayPage extends Component {
                 <button>Search Movies</button>
             </form> */}
             </nav>
-
+            <h1 className="playH1">Ready to play?</h1>
+            <h1 className="playH1">Click below on a deck and Go!</h1>
         </div>
         <div className="deckButtonDiv">{deckButtons}</div>
         <div className="footer">

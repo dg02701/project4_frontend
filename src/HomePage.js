@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./HomePage.css";
-import Header from "./Header";
+// import Header from "./Header";
+import HeaderHomePage from "./HeaderHomePage";
 import Footer from "./Footer";
 
 class HomePage extends Component {
@@ -19,15 +20,18 @@ class HomePage extends Component {
     return (
       <div >
         <div>
-          <Header />
+          <HeaderHomePage />
         </div>
         <br></br>
         <div className="main">
-            <h1>Welcome to an educational and fun app!</h1>
+            <h1 className="homePageAppTitle">Flashcard Fun 2.0</h1>
+            <h1>Welcome to our Homepage!</h1>
             <nav className="align-links">
-            <Link to="/playpage">Play</Link>
+            <Link to="/playpage">Click here to Play</Link>
             <Link to="/customizepage">Customize Display</Link>
-            <Link to="/adminpage">Administrator Page</Link>
+            {/* <Link to="/adminpage" id="adminHide">Administrator Page 
+              <span className="span1"> *password required* </span>
+            </Link> */}
 
             {/* <form
                 onSubmit={(event) => {

@@ -1,19 +1,19 @@
-.header {
+.headerHomePage {
     border: 5px solid black;
     /* align-items: flex-end; */
     background: url("./homePage.png");
-    background-size: 20%;
+    background-size: 40%;
     justify-content: center;
 
   }
-.title {
+.titleHide {
   /* font-size: 22px; */
-  font-size: 3em;
+  font-size: 5em;
   display: flex;
   justify-self: left;
   background-color: lightgrey;
   border-radius: 15px;
-  opacity: 0.9;
+  opacity: 0.0;
 }  
 .flex-title {
   display: flex;

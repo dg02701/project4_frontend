@@ -1,7 +1,7 @@
 ## Deere Project 4 - FRONTEND
 ## Overview
 Project 4 is a fullstack aplication consiting of a Express/Node.js Backend (BE) and a React-App Frontend (FE)
-This README.md is for the FRONTEND poriton.
+This README.md is for the FRONTEND portion.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## App Description:

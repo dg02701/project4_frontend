@@ -1,68 +1,43 @@
+## Deere Project 4 - FRONTEND
+## Overview
+Project 4 is a fullstack aplication consiting of a Express/Node.js Backend (BE) and a React-App Frontend (FE)
+This README.md is for the FRONTEND poriton.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## App Description:
+App is Flashcard 2.0 which is built off of Project 1 Flashcard 1.0.  1.0 was only a frontend app.  2.0 adds a backend to store flashcard decks, permanently keep user/student scores and progress, etc.
 
-In the project directory, you can run:
+So what is "Flashcard x.0"?  It is intended as an educational game/tool that can be played by even very young children.  1.0 used keyboard only to 'play' the deck.  This avoided difficulties that young users may have with controlling a mouse.  2.0 adds the backend allowing decks to be added.  
 
-### `npm start`
+What is future for Flashcard?  Version 3.0 will include 1.0 game play refactored from basic JS to JavaScript React.  Additionally, v3.0 will have ability for a non-IT parent/home-educator to load up a custom deck to BE.  Finally, v3.0 will need to have authentication added for user/player privacy, etc.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Note: INITIAL_PLANNING.md is in BACKEND repo and contains initial planning file that was approved for entire project and covers initial planing for both FE & BE.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Github repo links
+FE https://github.com/dg02701/project4_frontend
+BE https://github.com/dg02701/deere-project4-express-api-starter
 
-### `npm test`
+## Heroku app links
+FE - https://flashcard2-frontend.herokuapp.com/
+BE - https://flashcard2-backend.herokuapp.com/
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## List of Technologies Used in Frontend
+axios: "^0.20.0",
+react: "^16.13.1",
+react-dom: "^16.13.1",
+react-router: "^5.2.0",
+react-router-dom: "^5.2.0",
+react-scripts: "3.4.3"
+JavaScript React
+HTML
+CSS with Flexbox
 
-### `npm run build`
+## Credits
+### This frontend leans heavly on the Project 3 app for CSS on buttons/links.  
+Thanks to Jason Wheeler and Mark Meloy for their help and patience during that project.
+### The basic idea is from my initial Flashcard 1.0 for Project 1 @ 
+Github repo link: https://github.com/dg02701/project1_game_Flash_Cards
+### Finally, my thanks to Marc for talking me back in off the ledge a few times and dragging me across the finish line!!
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
